@@ -10,11 +10,18 @@ let ampm;
 if(hours>12){
     hours = hours - 12;
     ampm="PM"
-}else{
+}else if(hours==12){
+    ampm="PM"
+}else if(hours==0){
+    hours=12;
+    ampm="AM"
+}
+else{
     ampm = 'AM'
 }
  
-
+minutes = minutes < 10 ? '0' + minutes : minutes;
+seconds = seconds < 10 ? '0' + seconds : seconds;
 
  let weekDays = ['Sunday' ,'Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday']
 
