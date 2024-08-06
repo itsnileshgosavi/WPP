@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop List</title>
+    <style>
+        #draggable-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #draggable-list li {
+            padding: 8px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            cursor: grab;
+            margin: 10px;
+        }
+
+        .dragging {
+            opacity: 0.5;
+            background-color: #3d9e61;
+        }
+    </style>
+</head>
+<body>
+    <ul id="draggable-list">
+        <li draggable="true">Item 1</li>
+        <li draggable="true">Item 2</li>
+        <li draggable="true">Item 3</li>
+        <li draggable="true">Item 4</li>
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+</html>

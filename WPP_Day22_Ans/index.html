@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPP Day 23</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .dropdown-toggle{
+            cursor: pointer;
+            position: relative;
+            color: white;
+            cursor: pointer;
+        }
+        .dropdown{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            padding: 10px;
+            position: absolute;
+            border-radius: 10px;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown-toggle" onclick="toggleDropdown()">
+            <button style="font-size: xx-large; padding: 10px; background-color: black; color: white; border-radius: 20px;">&#9776;</button>
+            <ul class="dropdown hidden">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
